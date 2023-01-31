@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2? family= Syne & display=swap");
+/* Import de la police Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body {
+  margin: auto;
+  padding: 0px;
+  max-width: 1440px;
+  font-family: "Syne";
+  margin-top: -15px;
+}
+
+/*mettre les elements images et la liste sur la même ligne*/
+/*repartir l'espace disponible entre les éléments "space-between"*/
+nav {
+  display: flex; /*spécifier l'élément en fonction de l'espace disponible dans le conteneur*/
+  justify-content: space-between;
+}
+/*mettre les elements de la liste sur la même ligne*/
+/*retirer les puces de la liste*/
+nav ul {
+  display: flex; /*spécifier l'élément en fonction de l'espace disponible dans le conteneur*/
+  list-style: none;
+  text-align: center; /*aligner les éléments*/
+  line-height: 50px; /*definir la hauteur des éléments*/
+}
+/* redimensionner le logo */
+nav img {
+  width: 191.61px; /*largeur de l'image*/
+  height: 18.87px; /*hauteur de l'image*/
+  text-align: center; /*aligner les éléments*/
+  line-height: 50px; /*definir la hauteur des éléments*/
+  padding-top: 30px; /*marge externe haut*/
+  padding-left: 20px; /*marge externe gauche*/
+}
+nav li {
+  margin: 0px 50px;
+}
+/*couleur arriére-plan du block*/
+.commander {
+  background-color: #dc9f96;
+}
+/*intégrer un effet de survol avec la couleur aux boutons*/
+.commander:hover {
+  background: #c02e44;
+}
+/*intégrer la couleur du texte dans le lien commander*/
+.commander li a {
+  color: #ffff;
+}
+
+/*intégrer le style aux lien (couleur, taille...)*/
+/*retirer le soulignement */
+a {
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
