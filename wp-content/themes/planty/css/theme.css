@@ -1,62 +1,56 @@
-@import url("https://fonts.googleapis.com/css2? family= Syne & display=swap");
-/* Import de la police Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
-body {
-  margin: auto;
-  padding: 0px;
-  max-width: 1440px;
-  font-family: "Syne";
-  margin-top: -15px;
+section.commande {
+  display: inline-block;
+  line-height: 1px;
+  background-color: #818a91;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 3px;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  transition: all 0.3s;
+}
+.numero {
+  width: 50px; /*largeur du block*/
+  height: 45px; /*hauteur du block*/
+  font-weight: 700; /*épaisseur du texte*/
+  font-size: 18px; /*taille de la police du texte*/
+  text-align: center; /*centrer le texte*/
+}
+.secondbouton {
+  display: inline-block;
 }
 
-/*mettre les elements images et la liste sur la même ligne*/
-/*repartir l'espace disponible entre les éléments "space-between"*/
-nav {
-  display: flex; /*spécifier l'élément en fonction de l'espace disponible dans le conteneur*/
-  justify-content: space-between;
-}
-/*mettre les elements de la liste sur la même ligne*/
-/*retirer les puces de la liste*/
-nav ul {
-  display: flex; /*spécifier l'élément en fonction de l'espace disponible dans le conteneur*/
-  list-style: none;
-  text-align: center; /*aligner les éléments*/
-  line-height: 50px; /*definir la hauteur des éléments*/
-}
-/* redimensionner le logo */
-nav img {
-  width: 191.61px; /*largeur de l'image*/
-  height: 18.87px; /*hauteur de l'image*/
-  text-align: center; /*aligner les éléments*/
-  line-height: 50px; /*definir la hauteur des éléments*/
-  padding-top: 30px; /*marge externe haut*/
-  padding-left: 20px; /*marge externe gauche*/
-}
-nav li {
-  margin: 0px 50px;
-}
-/*couleur arriére-plan du block*/
-.commander {
-  background-color: #dc9f96;
-}
-/*intégrer un effet de survol avec la couleur aux boutons*/
-.commander:hover {
-  background: #c02e44;
-}
-/*intégrer la couleur du texte dans le lien commander*/
-.commander li a {
-  color: #ffff;
+.plus {
+  width: 20px; /*largeur du block*/
+  height: 20px; /*hauteur du block*/
+  background-color: #dc9f96; /*couleur arriére-plan du block*/
+  text-align: center; /*aligner l'élément icône*/
+  line-height: 25px; /*definir la hauteur de l'élément icône*/
+  border-top-right-radius: 14px; /*définir la courbure de la bordure coin en haut à gauche du block*/
+  border-bottom: 2px solid #ffffff; /*définir la 
+  /*largeur du block*/
+  height: 45px; /*hauteur du block*/
+  font-weight: 700; /*épaisseur du texte*/
+  font-size: 18px; /*taille de la police du texte*/
+  text-align: center; /*centrer le texte*/
+  color: #ffffff;
 }
 
-/*intégrer le style aux lien (couleur, taille...)*/
-/*retirer le soulignement */
-a {
-  color: #000000;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+.boutoncommande2 {
+  width: 20px; /*largeur du block*/
+  height: 20px; /*hauteur du block*/
+  background-color: #dc9f96; /*couleur arriére-plan du block*/
+  text-align: center; /*aligner l'élément icône*/
+  line-height: 25px; /*definir la hauteur de l'élément icône*/
+  border-bottom-right-radius: 14px; /*définir la courbure de la bordure coin en haut à gauche du block*/
 }
-footer {
-  display: flex;
-  justify-content: center;
+.moins {
+  /*largeur du block*/
+  height: 45px; /*hauteur du block*/
+  font-weight: 700; /*épaisseur du texte*/
+  line-height: 1px;
+  font-size: 18px; /*taille de la police du texte*/
+  text-align: center; /*centrer le texte*/
+  color: #ffffff;
 }
