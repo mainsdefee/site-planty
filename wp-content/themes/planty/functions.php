@@ -21,3 +21,13 @@ function register_my_menu() {
   register_nav_menu('footer-menu',__( 'Menu Footer' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+add_filter('wp_nav_menu_items', 'crunchify_add_login_logout_menu', 10, 2);
+function crunchify_add_login_logout_menu($items, $args) {
+ob_start();
+wp_loginout('index.php');
+$loginoutlink = ob_get_contents();
+ob_end_clean();
+$items .= '<li class="boutonconnexion">'. $loginoutlink .'</li>';
+return $items;
+}
